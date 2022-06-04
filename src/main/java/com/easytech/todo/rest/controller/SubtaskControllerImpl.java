@@ -17,11 +17,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "subtask")
-public class SubtaskController {
+public class SubtaskControllerImpl implements SubtaskController {
 
     private SubtaskService subtaskService;
 
-    public SubtaskController(SubtaskService subtaskService) {
+    public SubtaskControllerImpl(SubtaskService subtaskService) {
         this.subtaskService = subtaskService;
     }
 

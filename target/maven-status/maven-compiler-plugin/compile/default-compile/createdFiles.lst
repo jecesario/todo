@@ -1,0 +1,10 @@
+com/easytech/todo/domain/service/SubtaskServiceImpl.class
+com/easytech/todo/model/Subtask.class
+com/easytech/todo/domain/service/SubtaskService.class
+com/easytech/todo/rest/controller/SubtaskController.class
+com/easytech/todo/TodoApplication.class
+com/easytech/todo/service/SubtaskService.class
+com/easytech/todo/service/SubtaskServiceImpl.class
+com/easytech/todo/domain/model/Subtask.class
+com/easytech/todo/reposity/SubtaskRepository.class
+com/easytech/todo/domain/reposity/SubtaskRepository.class
