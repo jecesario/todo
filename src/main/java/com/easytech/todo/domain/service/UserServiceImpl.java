@@ -3,6 +3,7 @@ package com.easytech.todo.domain.service;
 import com.easytech.todo.domain.model.User;
 import com.easytech.todo.domain.reposity.UserRepository;
 import com.easytech.todo.exceptions.ObjectNotFoundException;
+import com.easytech.todo.rest.controller.dto.UserRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,14 +24,19 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public User create(User user) {
+    public User create(UserRequest userRequest) {
+        User user = new User();
+        user.setUsername(userRequest.getUsername());
+        user.setEmail(userRequest.getEmail());
         return userRepository.save(user);
     }
 
     @Override
-    public User update(Long id, User user) {
-        User userChanged = userRepository.findById(id)
+    public User update(Long id, UserRequest userRequest) {
+        User user = userRepository.findById(id)
                 .orElseThrow(() -> new ObjectNotFoundException(String.format("Usuario com o id: %s não encontrado", id)));
-        return userRepository.save(userChanged);
+        user.setUsername(userRequest.getUsername());
+        user.setEmail(userRequest.getEmail());
+        return userRepository.save(user);
     }
 }

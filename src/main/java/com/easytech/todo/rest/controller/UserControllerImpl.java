@@ -2,6 +2,7 @@ package com.easytech.todo.rest.controller;
 
 import com.easytech.todo.domain.model.User;
 import com.easytech.todo.domain.service.UserService;
+import com.easytech.todo.rest.controller.dto.UserRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,14 +26,20 @@ public class UserControllerImpl implements UserController {
     }
 
     @PostMapping
-    public ResponseEntity<User> create(@RequestBody User user) {
-        User userPersisted = userService.create(user);
-        return ResponseEntity.status(HttpStatus.CREATED).body(userPersisted);
+    public ResponseEntity<User> create(@RequestBody UserRequest userRequest) {
+        User user= userService.create(userRequest);
+        if(user == null){
+            return ResponseEntity.badRequest().build();
+        }
+        return ResponseEntity.status(HttpStatus.CREATED).body(user);
     }
 
     @PutMapping(value = "/{id}")
-    public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User user) {
-        User userChanged = userService.update(id, user);
-        return ResponseEntity.status(HttpStatus.OK).body(userChanged);
+    public ResponseEntity<User> update(@PathVariable Long id, @RequestBody UserRequest userRequest) {
+        User user = userService.update(id, userRequest);
+        if(user == null){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(user);
     }
 }
