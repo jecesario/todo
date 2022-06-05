@@ -1,11 +1,14 @@
 package com.easytech.todo.rest.controller.exceptions;
 
 import com.easytech.todo.exceptions.ObjectNotFoundException;
+import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import java.util.stream.Collectors;
 
@@ -20,7 +23,13 @@ public class ApplicationControllerAdvice {
 
     @ExceptionHandler(ConstraintViolationException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiErrors handlerObjectNotFoundException(ConstraintViolationException e) {
-        return new ApiErrors(e.getConstraintViolations().stream().map(errors -> errors.getMessageTemplate()).collect(Collectors.toList()));
+    public ApiErrors handlerConstraintViolationException(ConstraintViolationException e) {
+        return new ApiErrors(e.getConstraintViolations().stream().map(ConstraintViolation::getMessageTemplate).collect(Collectors.toList()));
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ApiErrors handlerMethodArgumentNotValidException(MethodArgumentNotValidException e) {
+        return new ApiErrors(e.getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.toList()));
     }
 }

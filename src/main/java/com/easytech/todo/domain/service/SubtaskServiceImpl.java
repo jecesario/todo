@@ -3,12 +3,10 @@ package com.easytech.todo.domain.service;
 import com.easytech.todo.domain.model.Subtask;
 import com.easytech.todo.domain.reposity.SubtaskRepository;
 import com.easytech.todo.exceptions.ObjectNotFoundException;
-import net.bytebuddy.implementation.bytecode.Throw;
-import org.springframework.data.crossstore.ChangeSetPersister;
+import com.easytech.todo.rest.controller.dto.SubtaskRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class SubtaskServiceImpl implements SubtaskService {
@@ -25,15 +23,18 @@ public class SubtaskServiceImpl implements SubtaskService {
     }
 
     @Override
-    public Subtask create(Subtask subtask) {
+    public Subtask create(SubtaskRequest subtaskRequest) {
+        Subtask subtask = new Subtask();
+        subtask.setTitle(subtaskRequest.getTitle());
+        subtask.setStatus(subtaskRequest.getStatus());
         return subtaskRepository.save(subtask);
     }
 
     @Override
-    public Subtask update(Long id, Subtask subtask) {
-        Subtask subtaskFound = findSubtaskById(id);
-
-        subtask.setId(subtaskFound.getId());
+    public Subtask update(Long id, SubtaskRequest subtaskRequest) {
+        Subtask subtask = findSubtaskById(id);
+        subtask.setTitle(subtaskRequest.getTitle());
+        subtask.setStatus(subtaskRequest.getStatus());
         return subtaskRepository.save(subtask);
     }
 

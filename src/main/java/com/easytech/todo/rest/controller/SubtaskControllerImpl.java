@@ -2,6 +2,7 @@ package com.easytech.todo.rest.controller;
 
 import com.easytech.todo.domain.model.Subtask;
 import com.easytech.todo.domain.service.SubtaskService;
+import com.easytech.todo.rest.controller.dto.SubtaskRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -32,18 +34,14 @@ public class SubtaskControllerImpl implements SubtaskController {
     }
 
     @PostMapping
-    public ResponseEntity<Subtask> create(@RequestBody Subtask subtask) {
-        Subtask subtaskPersisted = subtaskService.create(subtask);
+    public ResponseEntity<Subtask> create(@RequestBody @Valid SubtaskRequest subtaskRequest) {
+        Subtask subtaskPersisted = subtaskService.create(subtaskRequest);
         return ResponseEntity.status(HttpStatus.CREATED).body(subtaskPersisted);
     }
 
     @PutMapping(value = "/{id}")
-    public ResponseEntity<Subtask> update(@PathVariable Long id, @RequestBody Subtask subtask) {
-        Subtask subtaskPersisted = subtaskService.update(id, subtask);
-
-        if(subtaskPersisted.getId() == null) {
-            return ResponseEntity.notFound().build();
-        }
+    public ResponseEntity<Subtask> update(@PathVariable Long id, @RequestBody @Valid SubtaskRequest subtaskRequest) {
+        Subtask subtaskPersisted = subtaskService.update(id, subtaskRequest);
         return ResponseEntity.ok(subtaskPersisted);
     }
 
