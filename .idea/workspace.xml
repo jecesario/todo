@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e62e2e-dc22-4bea-b15d-df649533c593" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/SubtaskServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/utils/TestsUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/model/Subtask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/model/Subtask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/SubtaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/SubtaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/SubtaskRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/SubtaskRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/todo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docccc.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +64,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/easytech/todo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/com/easytech/todo" />
       <recent name="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain" />
     </key>
@@ -198,10 +192,10 @@
     <SUITE FILE_PATH="coverage/todo$SubtaskServiceImplTest_shouldReturnListOfSubtasks.ic" NAME="SubtaskServiceImplTest.shouldReturnListOfSubtasks Coverage Results" MODIFIED="1654391256045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.easytech.todo.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/todo$All_in_todo.ic" NAME="All in todo Coverage Results" MODIFIED="1654391286987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/todo$SubtaskServiceImplTest_shouldCreateSubtask.ic" NAME="SubtaskServiceImplTest.shouldCreateSubtask Coverage Results" MODIFIED="1654392358418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.easytech.todo.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/todo$All_in_todo.ic" NAME="All in todo Coverage Results" MODIFIED="1654395294247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/todo$SubtaskServiceImplTest_shoudCreateSubtask.ic" NAME="SubtaskServiceImplTest.shoudCreateSubtask Coverage Results" MODIFIED="1654391839827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.easytech.todo.service.*</FILTER>
     </SUITE>
