@@ -29,4 +29,10 @@ public class UserControllerImpl implements UserController {
         User userPersisted = userService.create(user);
         return ResponseEntity.status(HttpStatus.CREATED).body(userPersisted);
     }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User user) {
+        User userChanged = userService.update(id, user);
+        return ResponseEntity.status(HttpStatus.OK).body(userChanged);
+    }
 }

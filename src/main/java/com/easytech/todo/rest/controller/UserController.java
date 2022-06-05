@@ -4,10 +4,7 @@ import com.easytech.todo.domain.model.User;
 import com.easytech.todo.domain.service.UserService;
 import com.easytech.todo.domain.service.UserServiceImpl;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,4 +15,7 @@ public interface UserController {
 
     @PostMapping
     public ResponseEntity<User> create(User user);
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<User> update(Long id, User user);
 }
