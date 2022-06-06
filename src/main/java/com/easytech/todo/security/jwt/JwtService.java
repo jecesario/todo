@@ -12,7 +12,6 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
-import java.util.HashMap;
 
 @Service
 public class JwtService {
@@ -23,7 +22,7 @@ public class JwtService {
     private String signKey;
 
     public String generateToken(User user) {
-        long exp = Long.valueOf(expiration);
+        long exp = Long.parseLong(expiration);
         LocalDateTime dateTimeExpiration = LocalDateTime.now().plusMinutes(exp);
         Instant instant = dateTimeExpiration.atZone(ZoneId.systemDefault()).toInstant();
         Date date = Date.from(instant);
@@ -56,6 +55,6 @@ public class JwtService {
     }
 
     public String getLoggedUser(String token) throws ExpiredJwtException {
-        return (String) getClaims(token).getSubject();
+        return getClaims(token).getSubject();
     }
 }

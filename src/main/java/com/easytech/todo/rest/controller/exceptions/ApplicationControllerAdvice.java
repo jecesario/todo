@@ -1,6 +1,5 @@
 package com.easytech.todo.rest.controller.exceptions;
 
-import com.easytech.todo.exceptions.AuthenticationFailureException;
 import com.easytech.todo.exceptions.ObjectNotFoundException;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpStatus;

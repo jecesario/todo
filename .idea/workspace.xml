@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e62e2e-dc22-4bea-b15d-df649533c593" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/exceptions/AuthenticationFailureException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/CredentialsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/JwtTokenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtAuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/SubtaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/SubtaskServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/exceptions/ApplicationControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/exceptions/ApplicationControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/todo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +210,7 @@
       <updated>1654378950532</updated>
       <workItem from="1654378953477" duration="1000" />
       <workItem from="1654468639539" duration="856000" />
-      <workItem from="1654469515848" duration="11629000" />
+      <workItem from="1654469515848" duration="12526000" />
     </task>
     <servers />
   </component>
@@ -235,14 +231,9 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtAuthFilter.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtService.java</url>
-          <line>25</line>
+          <line>24</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>

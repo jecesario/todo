@@ -18,7 +18,7 @@ public class UserRequest {
     private String username;
 
     @NotEmpty(message = "O campo email precisa ser preenchido!")
-    @Email(message = "O campo email precisa ser preenchido com um email válido!") // TODO jc: evaluate update email validation, now pass with name@privader without com for example
+    @Email(message = "O campo email precisa ser preenchido com um email válido!") //evaluate update email validation, now pass with name@privader without com for example
     private String email;
 
     @NotEmpty(message = "O campo password precisa ser preenchido!")
