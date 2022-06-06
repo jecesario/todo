@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e62e2e-dc22-4bea-b15d-df649533c593" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/exceptions/AuthenticationFailureException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/CredentialsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/JwtTokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/reposity/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/reposity/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/exceptions/ApplicationControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/exceptions/ApplicationControllerAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/todo.iml" afterDir="false" />
@@ -97,6 +96,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.easytech.todo.exceptions" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/com/easytech/todo" />
@@ -119,7 +121,7 @@
       <module name="todo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.easytech.todo.*" />
+          <option name="PATTERN" value="com.easytech.todo.security.jwt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -212,7 +214,7 @@
       <updated>1654378950532</updated>
       <workItem from="1654378953477" duration="1000" />
       <workItem from="1654468639539" duration="856000" />
-      <workItem from="1654469515848" duration="4535000" />
+      <workItem from="1654469515848" duration="11629000" />
     </task>
     <servers />
   </component>
@@ -229,6 +231,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtAuthFilter.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/todo$SubtaskServiceImplTest_shouldReturnListOfSubtasks.ic" NAME="SubtaskServiceImplTest.shouldReturnListOfSubtasks Coverage Results" MODIFIED="1654391256045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

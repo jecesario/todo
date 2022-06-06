@@ -2,6 +2,7 @@ package com.easytech.todo.domain.service;
 
 import com.easytech.todo.domain.model.User;
 import com.easytech.todo.domain.reposity.UserRepository;
+import com.easytech.todo.exceptions.AuthenticationFailureException;
 import com.easytech.todo.exceptions.ObjectNotFoundException;
 import com.easytech.todo.rest.controller.dto.UserRequest;
 import com.easytech.todo.rest.controller.dto.UserResponse;
@@ -67,6 +68,17 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                 .withUsername(userPersisted.getUsername())
                 .withEmail(userPersisted.getEmail())
                 .build();
+    }
+
+    @Override
+    public UserDetails auth(User user) {
+        UserDetails userDetails = loadUserByUsername(user.getUsername());
+        boolean passwordMatches = passwordEncoder.matches(user.getPassword(), userDetails.getPassword());
+
+        if(passwordMatches) {
+            return userDetails;
+        }
+        throw new AuthenticationFailureException("Ocorreu um erro ao autenticar usuário");
     }
 
     @Override
