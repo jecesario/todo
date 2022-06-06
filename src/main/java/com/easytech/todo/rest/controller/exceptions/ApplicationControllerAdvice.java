@@ -3,6 +3,7 @@ package com.easytech.todo.rest.controller.exceptions;
 import com.easytech.todo.exceptions.ObjectNotFoundException;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -31,5 +32,11 @@ public class ApplicationControllerAdvice {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ApiErrors handlerMethodArgumentNotValidException(MethodArgumentNotValidException e) {
         return new ApiErrors(e.getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.toList()));
+    }
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ApiErrors handlerHttpMessageNotReadableException(HttpMessageNotReadableException e) {
+        return new ApiErrors("É necessário enviar um corpo de requisição válido");
     }
 }

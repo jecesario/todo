@@ -11,15 +11,10 @@ import javax.validation.constraints.Size;
 @Data
 @AllArgsConstructor
 @Builder(setterPrefix = "with")
-public class UserRequest {
+public class UserResponse {
 
-    @NotEmpty(message = "O campo username precisa ser preenchido!")
-    @Size(max = 15)
+    private Long id;
     private String username;
-
-    @Email(message = "O campo email precisa ser preenchido com um email válido!")
     private String email;
-
-    @NotEmpty(message = "O campo password precisa ser preenchido!")
-    private String password;
+    private boolean admin;
 }

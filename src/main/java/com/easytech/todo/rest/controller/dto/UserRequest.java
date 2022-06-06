@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
@@ -17,6 +18,9 @@ public class UserRequest {
     private String username;
 
     @NotEmpty(message = "O campo email precisa ser preenchido!")
-    @Size(max = 10)
+    @Email(message = "O campo email precisa ser preenchido com um email válido!") // TODO jc: evaluate update email validation, now pass with name@privader without com for example
     private String email;
+
+    @NotEmpty(message = "O campo password precisa ser preenchido!")
+    private String password;
 }
