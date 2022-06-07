@@ -5,22 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e62e2e-dc22-4bea-b15d-df649533c593" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/UserServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/utils/UserBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/utils/UserBuilderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/SubtaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/SubtaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/exceptions/ApplicationControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/exceptions/ApplicationControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/security/jwt/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,22 +81,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.easytech.todo.exceptions" />
@@ -101,6 +96,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easytech.todo.service.utils" />
       <recent name="com.easytech.todo.rest.controller.dto" />
       <recent name="com.easytech.todo.rest.controller" />
     </key>
@@ -111,7 +107,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TodoApplication">
+  <component name="RunManager" selected="JUnit.com.easytech.todo.service in todo">
     <configuration name="TodoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.easytech.todo.TodoApplication" />
       <module name="todo" />
@@ -144,15 +140,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="All in todo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="todo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubtaskServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceImplTest.shouldCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todo" />
       <extension name="coverage">
         <pattern>
@@ -161,24 +149,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.easytech.todo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.easytech.todo.service.SubtaskServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubtaskServiceImplTest.shouldCreateSubtask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="todo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.easytech.todo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.easytech.todo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.easytech.todo.service.SubtaskServiceImplTest" />
-      <option name="METHOD_NAME" value="shouldCreateSubtask" />
+      <option name="MAIN_CLASS_NAME" value="com.easytech.todo.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="shouldCreateUser" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.shouldReturnListOfUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easytech.todo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.easytech.todo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.easytech.todo.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="shouldReturnListOfUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.easytech.todo.service in todo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easytech.todo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.easytech.todo.service" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -192,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.C:/Users/Deni_/Documents/projetosSprings/todo" />
+        <item itemvalue="JUnit.com.easytech.todo.service in todo" />
         <item itemvalue="Application.TodoApplication" />
-        <item itemvalue="JUnit.All in todo" />
-        <item itemvalue="JUnit.SubtaskServiceImplTest.shouldCreateSubtask" />
-        <item itemvalue="JUnit.SubtaskServiceImplTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.shouldCreateUser" />
+        <item itemvalue="JUnit.UserServiceImplTest.shouldReturnListOfUsers" />
+        <item itemvalue="Gradle.C:/Users/Deni_/Documents/projetosSprings/todo" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +219,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -240,17 +247,17 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/todo$SubtaskServiceImplTest.ic" NAME="SubtaskServiceImplTest Coverage Results" MODIFIED="1654395114223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.easytech.todo.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/todo$All_in_todo.ic" NAME="All in todo Coverage Results" MODIFIED="1654395294247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/todo$SubtaskServiceImplTest_shouldReturnListOfSubtasks.ic" NAME="SubtaskServiceImplTest.shouldReturnListOfSubtasks Coverage Results" MODIFIED="1654391256045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.easytech.todo.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/todo$SubtaskServiceImplTest_shouldCreateSubtask.ic" NAME="SubtaskServiceImplTest.shouldCreateSubtask Coverage Results" MODIFIED="1654392358418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.easytech.todo.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/todo$All_in_todo.ic" NAME="All in todo Coverage Results" MODIFIED="1654462864269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/todo$SubtaskServiceImplTest_shoudCreateSubtask.ic" NAME="SubtaskServiceImplTest.shoudCreateSubtask Coverage Results" MODIFIED="1654391839827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.easytech.todo.service.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/todo$SubtaskServiceImplTest.ic" NAME="SubtaskServiceImplTest Coverage Results" MODIFIED="1654395114223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.easytech.todo.service.*</FILTER>
     </SUITE>
   </component>
