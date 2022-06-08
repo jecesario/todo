@@ -14,6 +14,5 @@ public interface UserService {
     UserResponse create(UserRequest userRequest);
     UserResponse update(Long id, UserRequest userRequest);
     UserDetails auth(User user);
-
     void delete(Long id);
 }

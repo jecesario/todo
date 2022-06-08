@@ -99,6 +99,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                 .build();
     }
 
+    @Override
     public void delete(Long id) {
         Optional<User> user = userRepository.findById(id);
         if(!user.isPresent()) {

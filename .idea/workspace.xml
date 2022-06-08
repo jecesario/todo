@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e62e2e-dc22-4bea-b15d-df649533c593" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/utils/UserBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/utils/UserBuilderRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/UserControllerImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
