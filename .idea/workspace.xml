@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e62e2e-dc22-4bea-b15d-df649533c593" name="Changes" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/UserServiceImplTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/utils/UserBuilder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/utils/UserBuilderRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/domain/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/easytech/todo/rest/controller/dto/UserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
->>>>>>> c59677d72a83d53008a98f31a87c1fb7e03498f0
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/easytech/todo/service/UserServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +84,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.easytech.todo.exceptions" />
@@ -112,38 +110,13 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.easytech.todo.service in todo">
-    <configuration name="TodoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.run">
+    <configuration name="run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.easytech.todo.TodoApplication" />
       <module name="todo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.easytech.todo.security.jwt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="C:/Users/Deni_/Documents/projetosSprings/todo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="UserServiceImplTest.shouldCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todo" />
@@ -161,7 +134,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest.shouldReturnListOfUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceImplTest.shouldDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todo" />
       <extension name="coverage">
         <pattern>
@@ -171,13 +144,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.easytech.todo.service" />
       <option name="MAIN_CLASS_NAME" value="com.easytech.todo.service.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="shouldReturnListOfUsers" />
+      <option name="METHOD_NAME" value="shouldDeleteUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.easytech.todo.service in todo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceImplTest.shouldUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todo" />
       <extension name="coverage">
         <pattern>
@@ -186,7 +159,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.easytech.todo.service" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.easytech.todo.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="shouldUpdateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.waitingForException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easytech.todo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.easytech.todo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.easytech.todo.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="waitingForException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.waitingForExceptionWhenUpdateInvoke" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easytech.todo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.easytech.todo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.easytech.todo.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="waitingForExceptionWhenUpdateInvoke" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,13 +205,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.run" />
+      <item itemvalue="JUnit.UserServiceImplTest.shouldCreateUser" />
+      <item itemvalue="JUnit.UserServiceImplTest.shouldDeleteUser" />
+      <item itemvalue="JUnit.UserServiceImplTest.shouldUpdateUser" />
+      <item itemvalue="JUnit.UserServiceImplTest.waitingForException" />
+      <item itemvalue="JUnit.UserServiceImplTest.waitingForExceptionWhenUpdateInvoke" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.easytech.todo.service in todo" />
-        <item itemvalue="Application.TodoApplication" />
+        <item itemvalue="JUnit.UserServiceImplTest.shouldDeleteUser" />
+        <item itemvalue="JUnit.UserServiceImplTest.waitingForExceptionWhenUpdateInvoke" />
+        <item itemvalue="JUnit.UserServiceImplTest.shouldUpdateUser" />
+        <item itemvalue="JUnit.UserServiceImplTest.waitingForException" />
         <item itemvalue="JUnit.UserServiceImplTest.shouldCreateUser" />
-        <item itemvalue="JUnit.UserServiceImplTest.shouldReturnListOfUsers" />
-        <item itemvalue="Gradle.C:/Users/Deni_/Documents/projetosSprings/todo" />
       </list>
     </recent_temporary>
   </component>

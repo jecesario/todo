@@ -3,6 +3,7 @@ package com.easytech.todo.service;
 import com.easytech.todo.domain.model.User;
 import com.easytech.todo.domain.reposity.UserRepository;
 import com.easytech.todo.domain.service.UserServiceImpl;
+import com.easytech.todo.exceptions.ObjectNotFoundException;
 import com.easytech.todo.rest.controller.dto.UserRequest;
 import com.easytech.todo.rest.controller.dto.UserResponse;
 import com.easytech.todo.service.utils.UserBuilder;
@@ -16,10 +17,11 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class UserServiceImplTest {
@@ -57,5 +59,46 @@ public class UserServiceImplTest {
          this.userResponse = this.userServiceImp.create(userRequest);
 
         assertThat(userResponse).isNotNull();
+    }
+    @Test
+    public void shouldUpdateUser(){
+        UserRequest userRequest = UserBuilderRequest.aUserRequest().nowRequest();
+        User userMock = UserBuilder.aUser().now();
+        when(this.userRepository.findById(userMock.getId())).thenReturn(Optional.of(userMock));
+        when(this.userRepository.save(any(User.class))).thenReturn(userMock);
+
+        UserResponse user = this.userServiceImp.update(userMock.getId(), userRequest);
+
+
+        assertThat(user).isNotNull();
+    }
+    @Test(expected = ObjectNotFoundException.class)
+    public void waitingForExceptionWhenUpdateInvoke(){
+        UserRequest userRequest = UserBuilderRequest.aUserRequest().nowRequest();
+        User userMock = UserBuilder.aUser().now();
+        userRequest.setUsername(null);
+        userRequest.setEmail(null);
+        userRequest.setPassword(null);
+        userMock.setId(null);
+
+        when(this.userRepository.findById(userMock.getId())).thenReturn(Optional.of(userMock));
+        when(this.userRepository.save(any(User.class))).thenReturn(userMock);
+
+        UserResponse user = this.userServiceImp.update(userMock.getId(), userRequest);
+
+        assertThat(user).isNull();
+    }
+
+    @Test
+    public void shouldDeleteUser(){
+        UserRequest userRequest = UserBuilderRequest.aUserRequest().nowRequest();
+        User userMock = UserBuilder.aUser().now();
+
+        when(this.userRepository.findById(userMock.getId())).thenReturn(Optional.of(userMock));
+        doNothing().when(this.userRepository).deleteById(userMock.getId());
+
+        this.userServiceImp.delete(userMock.getId());
+
+        verify(userRepository, times(1)).deleteById(userMock.getId());
     }
 }
