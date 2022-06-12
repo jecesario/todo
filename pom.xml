@@ -69,7 +69,6 @@
     </dependencies>
 
     <build>
-        <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -99,13 +98,14 @@
                     <version>0.8.6</version>
                     <executions>
                         <execution>
+                            <id>agent</id>
                             <goals>
                                 <goal>prepare-agent</goal>
                             </goals>
                         </execution>
                         <execution>
                             <id>report</id>
-                            <phase>prepare-package</phase>
+                            <phase>test</phase>
                             <goals>
                                 <goal>report</goal>
                             </goals>
@@ -113,6 +113,5 @@
                     </executions>
                 </plugin>
             </plugins>
-        </pluginManagement>
     </build>
 </project>
