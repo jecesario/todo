@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
+@AllArgsConstructor()
 @Builder(setterPrefix = "with")
 public class UserResponse {
 

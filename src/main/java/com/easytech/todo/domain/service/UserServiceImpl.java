@@ -13,6 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService, UserDetailsService {
@@ -98,4 +99,12 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                 .build();
     }
 
+    @Override
+    public void delete(Long id) {
+        Optional<User> user = userRepository.findById(id);
+        if(!user.isPresent()) {
+            throw new ObjectNotFoundException(String.format("Usuario com id %s não encontrado", id));
+        }
+        userRepository.deleteById(id);
+    }
 }
