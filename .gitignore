@@ -1,5 +1,6 @@
-/src/main/resources/application.properties/
+/src/main/resources/application.properties
 /.idea/
 /.mvn/
 /target/
 /todo.iml/
+/.class
