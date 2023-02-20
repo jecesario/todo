@@ -42,9 +42,9 @@ public class SubtaskServiceImpl implements SubtaskService {
 
     @Override
     public void delete(Long id) {
-        subtaskRepository
-                .findById(id)
-                .orElseThrow(() -> new ObjectNotFoundException(String.format("Subtask com o id: %s não encontrada", id)));
+        if(!subtaskRepository.findById(id).isPresent()) {
+            throw new ObjectNotFoundException(String.format("Subtask com o id: %s não encontrada", id));
+        }
         subtaskRepository.deleteById(id);
     }
 }
